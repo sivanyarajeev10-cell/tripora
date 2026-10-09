@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tripora | Travel, Your Way</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#home"><span class="mark">➤</span><span><b>tripora</b><small>TRAVEL, YOUR WAY</small></span></a>
+  <nav><a href="#destinations">Destinations</a><a href="#packages">Packages</a><a href="#car">Car service</a><a class="navbtn" href="#booking">Plan my trip</a></nav>
+</header>
+<main>
+<section class="hero" id="home"><div><p class="eyebrow">YOUR NEXT JOURNEY STARTS HERE</p><h1>Travel smarter.<br><em>Explore further.</em></h1><p class="intro">Discover beautiful places, choose a holiday package and request convenient car travel with Tripora.</p><a class="btn" href="#packages">Explore packages ↗</a> <a class="btn secondary" href="#booking">Plan a trip</a><p class="hint">✦ Personal trip requests · Confirmation before booking</p></div><div class="heroart"><div class="sun"></div><div class="hill h1"></div><div class="hill h2"></div><div class="floatcard">✦ <span><b>Find your somewhere</b><small>Start with a little curiosity</small></span></div></div></section>
+<section class="strip"><span>01 &nbsp; Discover places</span><span>02 &nbsp; Choose a package</span><span>03 &nbsp; Request your trip</span><span>04 &nbsp; Confirm with us</span></section>
+<section class="section" id="destinations"><div class="heading"><div><p class="eyebrow">FIND YOUR NEXT ESCAPE</p><h2>Places worth the journey</h2></div><p>Start close to home. Explore the beauty of Kerala and plan your next getaway.</p></div>
+<div class="destgrid">
+<article class="dest munnar"><span class="tag">Nature & hills</span><div><h3>Munnar</h3><p>Tea gardens, misty hills and scenic drives.</p><button data-destination="Munnar">Plan this trip ↗</button></div></article>
+<article class="dest alleppey"><span class="tag">Backwaters</span><div><h3>Alappuzha</h3><p>Serene canals, houseboats and sunsets.</p><button data-destination="Alappuzha">Plan this trip ↗</button></div></article>
+<article class="dest wayanad"><span class="tag">Green escapes</span><div><h3>Wayanad</h3><p>Forest views, waterfalls and fresh air.</p><button data-destination="Wayanad">Plan this trip ↗</button></div></article>
+</div><p class="note">Photos load from the internet. Destination listings are examples for the first demo.</p></section>
+<section class="section packages" id="packages"><div class="heading"><div><p class="eyebrow">SIMPLE STARTING IDEAS</p><h2>Explore our trip packages</h2></div><p>Sample packages. Final price, inclusions and availability must be confirmed.</p></div>
+<div class="packgrid">
+<article class="pack"><span class="emoji">🌿</span><small>NATURE ESCAPE</small><h3>Munnar Getaway</h3><p>Tea gardens, viewpoints and a relaxed scenic day.</p><strong>From ₹2,499 <small>/ person*</small></strong><button class="choose" data-package="Munnar Getaway">Choose package ↗</button></article>
+<article class="pack featured"><span class="emoji">🛶</span><small>BACKWATER BREAK</small><h3>Alappuzha Day Out</h3><p>Explore backwater views and local highlights.</p><strong>From ₹1,499 <small>/ person*</small></strong><button class="choose" data-package="Alappuzha Day Out">Choose package ↗</button></article>
+<article class="pack"><span class="emoji">⛰️</span><small>GREEN ADVENTURE</small><h3>Wayanad Explorer</h3><p>Plan a refreshing nature-focused escape.</p><strong>From ₹2,999 <small>/ person*</small></strong><button class="choose" data-package="Wayanad Explorer">Choose package ↗</button></article>
+</div><p class="note">*Illustrative demo prices only. Do not advertise these as confirmed offers until you verify costs and partners.</p></section>
+<section class="car" id="car"><div><p class="eyebrow">YOUR JOURNEY, YOUR PACE</p><h2>Meet you on the road.</h2><p>Request car travel for local sightseeing, custom day trips, or pickup and drop-off. We will contact you to confirm availability and the final fare.</p><ul><li>Local sightseeing trips</li><li>Custom day-trip requests</li><li>Pickup and drop-off requests</li><li>Confirmation before your trip</li></ul><a class="btn light" href="#booking" data-service="Car service">Request car service ↗</a></div><div class="carart"><div class="orbit"></div><span>🚙</span><aside>A little more freedom<br><b>along the way.</b></aside></div></section>
+<section class="section" id="booking"><div class="heading"><div><p class="eyebrow">LET'S PLAN SOMETHING GOOD</p><h2>Request your trip</h2></div><p>Send a request for follow-up. This demo does not automatically book or charge anyone.</p></div>
+<div class="bookinggrid"><form id="bookingForm">
+<div class="fields"><label>Full name<input name="name" required maxlength="80" placeholder="Your name"></label><label>Phone number<input name="phone" type="tel" required maxlength="25" placeholder="Your contact number"></label></div>
+<div class="fields"><label>What do you need?<select name="service" id="service" required><option value="">Choose a service</option><option>Holiday package</option><option>Car service</option><option>Custom trip plan</option></select></label><label>Destination<input name="destination" id="destination" required maxlength="100" placeholder="e.g. Munnar"></label></div>
+<div class="fields"><label>Preferred date<input name="date" id="date" type="date" required></label><label>Number of travellers<input name="travellers" type="number" min="1" max="30" value="2" required></label></div>
+<label>Pickup location <small>(optional)</small><input name="pickup" maxlength="120" placeholder="Where should the trip start?"></label>
+<label>Extra details <small>(optional)</small><textarea name="notes" rows="4" maxlength="1000" placeholder="Trip length, places you want to see, questions..."></textarea></label>
+<button class="btn submit" type="submit">Prepare booking request ↗</button><p class="note">Do not enter payment card details or sensitive personal information.</p><div id="message" role="status"></div><details id="preview" hidden><summary>View request details</summary><pre id="previewText"></pre></details>
+</form>
+<aside class="next"><span class="emoji">✦</span><h3>What happens next?</h3><p><b>1. You send a request</b><br>Share your travel details.</p><p><b>2. We check availability</b><br>Confirm service, timing and pricing.</p><p><b>3. Your trip is confirmed</b><br>Only after you agree to the final details.</p><div class="contact">Before launch, add your real business email and contact details.</div></aside></div></section>
+</main>
+<footer><a class="logo" href="#home"><span class="mark">➤</span><span><b>tripora</b><small>TRAVEL, YOUR WAY</small></span></a><p>Discover more. Travel your way.</p><span>© <span id="year"></span> Tripora · Demo website</span></footer>
+<script src="script.js"></script>
+</body></html>
